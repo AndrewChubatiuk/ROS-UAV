@@ -1,0 +1,2 @@
+aruco:mofs:ros_bubble_rob:vision_control_4_uav:vrep_common:vrep_joy:vrep_plugin:vrep_plugin_skeleton:vrep_skeleton_msg_and_srv
+-DCATKIN_DEVEL_PREFIX=/home/andrew/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/andrew/catkin_ws/install -G Unix Makefiles

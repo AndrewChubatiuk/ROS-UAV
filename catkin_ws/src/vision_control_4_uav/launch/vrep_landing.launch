@@ -1,0 +1,5 @@
+<launch>
+
+<node name="vrep_VC" pkg="ardroneArucoVisualFuzzyController" type="vrep_landing" output="screen">
+  </node>
+</launch>

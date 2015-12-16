@@ -1,0 +1,37 @@
+<package>
+  <name>vision_control_4_uav</name>
+  <version>2.0.0</version>
+  <description>
+     vision_control_4_uav is a node that connect the vision information with the control system and also send the command to the AUV. In this version 1.0 the only UAV that can be controlled is an AR.Drone v2.0
+  </description>
+
+  <maintainer email="miguel.olivaresmendez@uni.lu">Miguel A. Olivares-Mendez
+  </maintainer>
+  <license>BSD</license>
+
+  <url>http://ros.org/wiki/vision_control_4_uav</url>
+
+  <build_depend>message_generation</build_depend>
+  <run_depend>message_runtime</run_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>std_srvs</run_depend>
+  <build_depend>std_srvs</build_depend>
+  <build_depend>rospy</build_depend>
+  <run_depend>rospy</run_depend>
+  <build_depend>roscpp</build_depend>
+  <run_depend>roscpp</run_depend>
+  <build_depend>rosbag</build_depend>
+  <run_depend>rosbag</run_depend>
+  <build_depend>aruco</build_depend>
+  <run_depend>aruco</run_depend>
+  <!--depend package="vrep_common"/-->
+  
+   <export>
+  <rosdoc config="rosdoc.yaml" />
+  </export>
+
+</package>
+
+

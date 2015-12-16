@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "vision_control_4_uav")
+set(vision_control_4_uav_MAINTAINER "Miguel A. Olivares-Mendez <miguel.olivaresmendez@uni.lu>")
+set(vision_control_4_uav_DEPRECATED "")
+set(vision_control_4_uav_VERSION "2.0.0")
+set(vision_control_4_uav_BUILD_DEPENDS "message_generation" "std_msgs" "std_srvs" "rospy" "roscpp" "rosbag" "aruco")
+set(vision_control_4_uav_RUN_DEPENDS "message_runtime" "std_msgs" "std_srvs" "rospy" "roscpp" "rosbag" "aruco")
+set(vision_control_4_uav_BUILDTOOL_DEPENDS "catkin")

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 5.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage2">
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<configuration buildProperties="" id="cdt.managedbuild.toolchain.gnu.cross.base.617100501" name="Default" parent="org.eclipse.cdt.build.core.emptycfg">
+			<folderInfo id="cdt.managedbuild.toolchain.gnu.cross.base.617100501.190164443" name="/" resourcePath="">
+				<toolChain id="cdt.managedbuild.toolchain.gnu.cross.base.23419827" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.base">
+					<option id="cdt.managedbuild.option.gnu.cross.prefix.1101957217" name="Prefix" superClass="cdt.managedbuild.option.gnu.cross.prefix"/>
+					<option id="cdt.managedbuild.option.gnu.cross.path.1878508782" name="Path" superClass="cdt.managedbuild.option.gnu.cross.path"/>
+					<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.1838645225" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
+					<builder id="cdt.managedbuild.builder.gnu.cross.1046428761" managedBuildOn="false" name="Gnu Make Builder.Default" superClass="cdt.managedbuild.builder.gnu.cross"/>
+					<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.1088427688" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler"/>
+					<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.171556323" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler"/>
+					<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.205273344" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
+					<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.679919485" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker"/>
+					<tool id="cdt.managedbuild.tool.gnu.cross.archiver.398339407" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver"/>
+					<tool id="cdt.managedbuild.tool.gnu.cross.assembler.1760417515" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler"/>
+				</toolChain>
+			</folderInfo>
+		</configuration>
+	</storageModule>
+</cproject>

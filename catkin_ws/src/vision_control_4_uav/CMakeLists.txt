@@ -1,0 +1,70 @@
+cmake_minimum_required(VERSION 2.8)
+project(vision_control_4_uav)
+
+set(CMAKE_CXX_FLAGS "-std=gnu++0x ${CMAKE_CXX_FLAGS}")
+
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
+
+set( MESSAGE_DEPENDENCIES
+  std_msgs
+)
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  rosbag
+  std_srvs
+  message_generation
+  mofs
+  aruco
+#  snt_ardrone_driver
+  ${MESSAGE_DEPENDENCIES}
+)
+
+
+add_message_files(DIRECTORY msg
+  FILES
+  codeCommand.msg
+)
+
+generate_messages(
+  DEPENDENCIES 
+  ${MESSAGE_DEPENDENCIES}
+)
+
+
+catkin_package(
+  INCLUDE_DIRS include
+  CATKIN_DEPENDS message_runtime roscpp rospy std_msgs std_srvs rosbag aruco
+)
+
+include_directories(
+    include
+    ${catkin_INCLUDE_DIRS}
+)
+
+
+#Create a vision control instance
+add_executable(landing_node src/vrep_landing.cpp)
+
+target_link_libraries(landing_node
+  ${catkin_LIBRARIES}
+)
+
+add_dependencies(landing_node ${catkin_EXPORTED_TARGETS})
+add_dependencies(landing_node ${PROJECT_NAME}_generate_messages_cpp)
+
+#Create a keyboard control of the ardrone
+add_executable(key_node src/key_number_code.cpp)
+
+target_link_libraries(key_node
+  ${catkin_LIBRARIES}
+)
+
+add_dependencies(key_node ${catkin_EXPORTED_TARGETS})
+add_dependencies(key_node ${PROJECT_NAME}_generate_messages_cpp)
+
+
+install(TARGETS 
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)

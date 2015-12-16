@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "aruco")
+set(aruco_MAINTAINER "Miguel A. Olivares-Mendez <miguel.olivaresmendez@uni.lu>")
+set(aruco_DEPRECATED "")
+set(aruco_VERSION "2.0.0")
+set(aruco_BUILD_DEPENDS "message_generation" "std_msgs" "geometry_msgs" "std_srvs" "rospy" "roscpp" "rosbag" "cv_bridge" "image_transport" "OpenCV" "tf")
+set(aruco_RUN_DEPENDS "message_runtime" "geometry_msgs" "std_srvs" "std_msgs" "rospy" "roscpp" "rosbag" "cv_bridge" "image_transport" "OpenCV" "tf")
+set(aruco_BUILDTOOL_DEPENDS "catkin")

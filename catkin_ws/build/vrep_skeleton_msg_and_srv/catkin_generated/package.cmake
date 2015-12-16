@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "vrep_skeleton_msg_and_srv")
+set(vrep_skeleton_msg_and_srv_MAINTAINER "Marc <marc@coppeliarobotics.com>")
+set(vrep_skeleton_msg_and_srv_DEPRECATED "")
+set(vrep_skeleton_msg_and_srv_VERSION "3.1.2")
+set(vrep_skeleton_msg_and_srv_BUILD_DEPENDS "roscpp" "std_msgs" "message_generation")
+set(vrep_skeleton_msg_and_srv_RUN_DEPENDS "roscpp" "message_runtime")
+set(vrep_skeleton_msg_and_srv_BUILDTOOL_DEPENDS "catkin")

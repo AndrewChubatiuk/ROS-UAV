@@ -1,0 +1,8 @@
+prefix=/home/andrew/catkin_ws/install
+
+Name: vrep_common
+Description: Description of vrep_common
+Version: 3.1.2
+Cflags: -I/home/andrew/catkin_ws/install/include
+Libs: -L/home/andrew/catkin_ws/install/lib 
+Requires: message_runtime

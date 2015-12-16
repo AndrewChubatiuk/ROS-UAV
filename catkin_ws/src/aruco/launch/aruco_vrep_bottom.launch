@@ -1,0 +1,7 @@
+<launch>
+  <node name="aruco_ueye" pkg="aruco" type="aruco" args="vrep/QRbottomCameraData 0.5 vrep.yml">
+  <param name="cam_calib_dir" value="$(find aruco)/data/" type="str" />
+  </node>
+     <node pkg="rosbag" type="record" name="rosbag" args="-o /tmp/markerInfo /marker_info"> 
+   </node> 
+</launch>
